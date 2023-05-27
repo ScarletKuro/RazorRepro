@@ -1,10 +1,8 @@
-@using MudBlazor
-@using Repro.Data
 @namespace Repro.Shared
 
 <MudDataGrid T="MyViewModel">
     <Columns>
-        <MyColumn Property="_ => _.MyProperty">
+        <MyColumn Property="x => x.MyProperty">
             <CellTemplate>X</CellTemplate>
         </MyColumn>
     </Columns>
